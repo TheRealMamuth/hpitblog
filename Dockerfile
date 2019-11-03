@@ -10,4 +10,3 @@ RUN cd /var/www/html && tar -xzf pico-release-v2.0.4.tar.gz && rm pico-release-v
 EXPOSE 80
 # Run apache2
 CMD apachectl -D FOREGROUND
-USER piotrkoska
