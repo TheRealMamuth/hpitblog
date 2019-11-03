@@ -6,7 +6,7 @@ RUN cd /var/www/html && tar -xzf pico-release-v2.0.4.tar.gz && rm pico-release-v
     a2enmod ssl && \
     a2ensite 000-default.conf && \
     a2ensite default-ssl.conf && \
-    a2enmod rewrite && \
+    a2enmod rewrite
 EXPOSE 80
 # Run apache2
 CMD apachectl -D FOREGROUND
